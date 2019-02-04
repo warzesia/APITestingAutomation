@@ -9,11 +9,15 @@ public abstract class Response {
 	public JSONObject jsonSubject;
 	public JSONObject jsonSchema;
 	
-	public Response(String schemaFilepath) {
-		jsonSchema = JSONHelper.parseJSONObjectFromFile(schemaFilepath);
+	public Response(JSONObject jsonSubject, JSONObject jsonSchema) {
+		this.jsonSubject = jsonSubject;
+		this.jsonSchema = jsonSchema;
 	}
 	
-	abstract Boolean validateAgainstSchema();
+	public Boolean validateAgainstSchema(){
+		return JSONHelper.validateJSONSubjectAgainstSchema(this.jsonSubject, this.jsonSchema);
+	}
+	
 	abstract Boolean validateAgainstRules();
 
 }

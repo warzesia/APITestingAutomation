@@ -11,6 +11,10 @@ import org.everit.json.schema.loader.SchemaLoader;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import com.google.gson.Gson;
+
+import responses.FlexScoreResponse;
+
 //import java.io.FileNotFoundException;
 //import java.io.FileReader;
 //import java.io.IOException;
@@ -40,6 +44,13 @@ public class JSONHelper {
 		}
 		return jsonObject;
 	}
+	
+	public static FlexScoreResponse parseFlexScoreresponseFromJSONObject(JSONObject jsonObject) {
+		Gson gson = new Gson();  
+		return gson.fromJson(jsonObject.toString(), FlexScoreResponse.class);  
+	}
+	
+	
 	
 //	public static JSONObject parseJSONObject2(String path) {
 //		JSONParser parser = new JSONParser();
