@@ -45,7 +45,7 @@ public class JSONHelper {
 		return jsonObject;
 	}
 	
-	public static FlexScoreResponse parseFlexScoreresponseFromJSONObject(JSONObject jsonObject) {
+	public static FlexScoreResponse parseFlexScoreResponseFromJSONObject(JSONObject jsonObject) {
 		Gson gson = new Gson();  
 		return gson.fromJson(jsonObject.toString(), FlexScoreResponse.class);  
 	}

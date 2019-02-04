@@ -42,6 +42,25 @@
 						<testFailureIgnore>false</testFailureIgnore>
 					</configuration>
 				</plugin>
+				
+				<plugin>
+        			<groupId>org.codehaus.mojo</groupId>
+        			<artifactId>properties-maven-plugin</artifactId>
+        			<version>1.0.0</version>
+        			<executions>
+          				<execution>
+            				<phase>initialize</phase>
+            				<goals>
+              					<goal>read-project-properties</goal>
+            				</goals>
+            				<configuration>
+              					<files>
+                					<file>/APITestingAutomation/src/main/Resources/properties.properties</file>
+              					</files>
+            				</configuration>
+          				</execution>
+        			</executions>
+      			</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
