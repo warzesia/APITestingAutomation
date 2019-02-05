@@ -1,0 +1,30 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"type": "object",
+	"required": ["flexScore"],
+	"properties": {
+		"flexScore": {
+		"type": "object",
+		"required": ["totalScore","offerScore","ptuData"],
+		"properties": {
+			"totalScore": {"type": "number"},
+			"offerScore": {"type": "number"},
+			"ptuData": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"required": ["Start", "Power", "Price", "Disposition","powerScore","priceScore"],
+            		"properties": {
+            			"Start": {"type": "integer"},
+						"Power": {"type": "integer"},
+						"Price": {"type": "number"},
+						"Disposition": {"type": "string"},
+						"powerScore": {"type": "number"},
+						"priceScore": {"type": "number"}
+						}
+					}
+        		}
+      		}
+		}
+	}
+}

@@ -35,7 +35,7 @@ public class Constants {
     	InputStream input = null;
 
     	try {
-    		input = new FileInputStream("src/main/Resources/properties.properties");
+    		input = new FileInputStream("src/main/resources/properties.properties");
     		properties.load(input);
     	} catch (IOException ex) {
     		ex.printStackTrace();

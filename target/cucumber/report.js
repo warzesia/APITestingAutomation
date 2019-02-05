@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 271447624,
+  "duration": 245455295,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,43 +47,43 @@ formatter.match({
   "location": "CalculateFlexScoreSteps.system_generates_a_valid_FlexScore_request()"
 });
 formatter.result({
-  "duration": 173980346,
+  "duration": 91772838,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFlexScoreSteps.the_FlexScore_Request_is_sent_to_the_FlexScore_API_Endpoint()"
 });
 formatter.result({
-  "duration": 338089731,
+  "duration": 464774007,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFlexScoreSteps.the_response_should_contain_Valid_Server_Code()"
 });
 formatter.result({
-  "duration": 140169169,
+  "duration": 193191031,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFlexScoreSteps.the_response_should_contain_JSON_body_matching_the_FlexScore_Response_Schema()"
 });
 formatter.result({
-  "duration": 78791,
+  "duration": 15494721,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFlexScoreSteps.the_response_JSON_body_should_contain_valid_FlexScore_Content()"
 });
 formatter.result({
-  "duration": 77676571,
+  "duration": 90189397,
   "status": "passed"
 });
 formatter.after({
-  "duration": 74439,
+  "duration": 70825,
   "status": "passed"
 });
 formatter.before({
-  "duration": 192159,
+  "duration": 652568,
   "status": "passed"
 });
 formatter.scenario({
@@ -113,25 +113,25 @@ formatter.match({
   "location": "CalculateFlexScoreSteps.system_generates_an_invalid_FlexScore_request()"
 });
 formatter.result({
-  "duration": 359309,
+  "duration": 275835,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFlexScoreSteps.the_FlexScore_Request_is_sent_to_the_FlexScore_API_Endpoint()"
 });
 formatter.result({
-  "duration": 336613,
+  "duration": 446800,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFlexScoreSteps.the_response_should_contain_Invalid_Server_Code()"
 });
 formatter.result({
-  "duration": 52125309,
+  "duration": 99523580,
   "status": "passed"
 });
 formatter.after({
-  "duration": 937204,
+  "duration": 712536,
   "status": "passed"
 });
 });

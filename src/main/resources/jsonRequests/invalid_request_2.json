@@ -1,0 +1,21 @@
+{
+  "flexRequest": {
+    "ptuData": [
+      {
+        "Start": 14534,
+        "Power": 130000,
+        "Price": 5.00,
+        "Disposition": "Available"
+      }
+    ]
+  },
+  "flexOffer": {
+    "ptuData": [
+      {
+        "Start": 1,
+        "Power": 0,
+        "Disposition": "Available"
+      }
+    ]
+  }
+}
