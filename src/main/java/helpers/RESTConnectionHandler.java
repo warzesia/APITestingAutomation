@@ -66,6 +66,30 @@ public class RESTConnectionHandler {
 	public void closeHTTPConnection() {
 		this.connection.disconnect();		
 	}
+	
+	public long readAndWrite(String endpointURL, String jsonBody) {
+		long result = 0;
+		this.openHTTPConnection(endpointURL);
+		try {
+			this.connection.setRequestMethod("POST");
+	        OutputStream os = this.connection.getOutputStream();
+	        
+	        long start = System.currentTimeMillis();
+	        //start
+	        os.write(jsonBody.getBytes("UTF-8"));
+	        this.connection.getResponseCode();
+	        //stop
+	        long end = System.currentTimeMillis();
+	        result = end - start;
+	        os.close();
+	        
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		this.closeHTTPConnection();
+		return result;
+	}
 
 }
 
