@@ -7,6 +7,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.util.List;
+
 import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;
 
@@ -67,7 +69,7 @@ public class RESTConnectionHandler {
 		this.connection.disconnect();		
 	}
 	
-	public long readAndWrite(String endpointURL, String jsonBody) {
+	public long measureServerResponseTime(String endpointURL, String jsonBody) {
 		long result = 0;
 		this.openHTTPConnection(endpointURL);
 		try {
@@ -86,7 +88,7 @@ public class RESTConnectionHandler {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}	
 		this.closeHTTPConnection();
 		return result;
 	}
