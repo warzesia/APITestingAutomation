@@ -1,19 +1,14 @@
 package APITestingAutomation;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 import org.json.JSONObject;
 
 import helpers.CalculationHelper;
 import helpers.Constants;
 import helpers.JSONHelper;
-import helpers.RESTConcurrentConnectionHelper;
-import helpers.RESTConcurrentConnectionHelper.ServerResponseTimeRusults;
+import helpers.RESTConcurrentConnectionHandler;
+import helpers.RESTConcurrentConnectionHandler.ServerResponseTimeRusults;
 import helpers.RESTConnectionHandler;
 import responses.FlexScoreResponse;
 
@@ -37,7 +32,7 @@ public class Main
         //*************************************************************************
         // MULTI-THREAD SERVER RESPONSE TEST
         
-        RESTConcurrentConnectionHelper RESTConcurrentConnectionHelper = new RESTConcurrentConnectionHelper();
+        RESTConcurrentConnectionHandler RESTConcurrentConnectionHelper = new RESTConcurrentConnectionHandler();
         ServerResponseTimeRusults serverResponseTimeRusults = 
         		RESTConcurrentConnectionHelper.runConnectionSpeedTest(urlEndpoint, exampleValidJsonRequest.toString(), 10);
 			

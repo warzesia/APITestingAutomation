@@ -1,0 +1,172 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 271447624,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CalculateFlexScoreSteps.startTestScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Receive valid FlexScore response by calling the FlexScore API endpoint with valid FlexScore request",
+        "description": "",
+        "id": "calculate-flexscore-based-on-given-flexoffer-and-flexrequest;receive-valid-flexscore-response-by-calling-the-flexscore-api-endpoint-with-valid-flexscore-request",
+        "after": [
+          {
+            "result": {
+              "duration": 74439,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CalculateFlexScoreSteps.finishTestScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 173980346,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "System generates a valid FlexScore request",
+            "match": {
+              "location": "CalculateFlexScoreSteps.system_generates_a_valid_FlexScore_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 338089731,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The FlexScore Request is sent to the FlexScore API Endpoint",
+            "match": {
+              "location": "CalculateFlexScoreSteps.the_FlexScore_Request_is_sent_to_the_FlexScore_API_Endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 140169169,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The response should contain Valid Server Code",
+            "match": {
+              "location": "CalculateFlexScoreSteps.the_response_should_contain_Valid_Server_Code()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78791,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The response should contain JSON body matching the FlexScore Response Schema",
+            "match": {
+              "location": "CalculateFlexScoreSteps.the_response_should_contain_JSON_body_matching_the_FlexScore_Response_Schema()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77676571,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The response JSON body should contain valid FlexScore Content",
+            "match": {
+              "location": "CalculateFlexScoreSteps.the_response_JSON_body_should_contain_valid_FlexScore_Content()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 192159,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CalculateFlexScoreSteps.startTestScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Receive server error response by calling the FlexScore API endpoint with invalid FlexScore request",
+        "description": "",
+        "id": "calculate-flexscore-based-on-given-flexoffer-and-flexrequest;receive-server-error-response-by-calling-the-flexscore-api-endpoint-with-invalid-flexscore-request",
+        "after": [
+          {
+            "result": {
+              "duration": 937204,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CalculateFlexScoreSteps.finishTestScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 359309,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "System generates an invalid FlexScore request",
+            "match": {
+              "location": "CalculateFlexScoreSteps.system_generates_an_invalid_FlexScore_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 336613,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The FlexScore Request is sent to the FlexScore API Endpoint",
+            "match": {
+              "location": "CalculateFlexScoreSteps.the_FlexScore_Request_is_sent_to_the_FlexScore_API_Endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52125309,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The response should contain Invalid Server Code",
+            "match": {
+              "location": "CalculateFlexScoreSteps.the_response_should_contain_Invalid_Server_Code()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Calculate FlexScore based on given FlexOffer and FlexRequest",
+    "description": "",
+    "id": "calculate-flexscore-based-on-given-flexoffer-and-flexrequest",
+    "keyword": "Feature",
+    "uri": "CalculateFlexScore.feature"
+  }
+]
