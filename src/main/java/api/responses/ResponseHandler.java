@@ -14,9 +14,7 @@ public abstract class ResponseHandler {
 	}
 	
 	public Boolean validateAgainstSchema(){
-		//TODO: implement schema validation
-		//return JSONHelper.validateJSONSubjectAgainstSchema(this.jsonSubject, this.jsonSchema);
-		return true;
+		return JSONHelper.validateJSONSubjectAgainstSchema(this.jsonSubject, this.jsonSchema);
 	}
 
 	//generic ResponseHandler methods that need to be implemented per Response Type

@@ -2,8 +2,6 @@ package helpers;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
 
 import org.everit.json.schema.Schema;
 import org.everit.json.schema.ValidationException;
@@ -14,16 +12,14 @@ import org.json.JSONTokener;
 import com.google.gson.Gson;
 
 import api.responses.FlexScoreResponseHandler;
-import api.responses.ResponseHandler;
 
-//import java.io.FileNotFoundException;
-//import java.io.FileReader;
-//import java.io.IOException;
-//import java.util.Iterator;
 
 public class JSONHelper {
 	
 	public static Boolean validateJSONSubjectAgainstSchema(JSONObject jsonSubject, JSONObject jsonSchema){
+		//TODO: 
+		//implement the validation
+		// - the current implementation throws an exception
 		Schema schema = SchemaLoader.load(jsonSchema);
 	    schema.validate(jsonSchema);  
 	    try {

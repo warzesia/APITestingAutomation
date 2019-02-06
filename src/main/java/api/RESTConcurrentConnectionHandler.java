@@ -10,6 +10,7 @@ import helpers.Constants;
 import helpers.JSONHelper;
 
 
+//dummy class for creating concurrent Server connections
 public class RESTConcurrentConnectionHandler {
 	
 	public ServerResponseTimeRusults runConnectionSpeedTest(String endpointToCall, String jsonCallBodyToPass, int numberOfConnections) {

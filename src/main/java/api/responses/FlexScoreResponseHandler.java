@@ -3,8 +3,6 @@ package api.responses;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONObject;
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

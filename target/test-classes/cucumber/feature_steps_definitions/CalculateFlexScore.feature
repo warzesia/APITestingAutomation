@@ -12,3 +12,16 @@ Scenario: Receive server error response by calling the FlexScore API endpoint wi
 	When The FlexScore Request is sent to the FlexScore API Endpoint
 	Then The response should contain Invalid Server Code
 	
+	
+#TODO: 
+# "The response should contain Valid Server Code" and
+# "The response should contain Invalid Server Code"
+# To be replaced with description containing actual Code (200, 500)..	
+	
+	
+#Scenario: Receive server response in less than 1000 milliseconds when calling it 10 times
+#	Given System generates 10 valid FlexScore requests
+#	When The 10 FlexScore Request are sent to the FlexScore API Endpoint
+#	Then The average response time is less than 1000 milliseconds
+	
+	
