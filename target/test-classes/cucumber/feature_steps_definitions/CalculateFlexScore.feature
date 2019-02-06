@@ -14,9 +14,13 @@ Scenario: Receive server error response by calling the FlexScore API endpoint wi
 	
 	
 #TODO: 
+# 1 -
 # "The response should contain Valid Server Code" and
 # "The response should contain Invalid Server Code"
 # To be replaced with description containing actual Code (200, 500)..	
+# 2 -
+# "The response JSON body should contain valid FlexScore Content"
+# To be deleted due to replicating the algorithm/logic of the function
 	
 	
 #Scenario: Receive server response in less than 1000 milliseconds when calling it 10 times
